@@ -46,7 +46,6 @@ public class DataSourcesService {
         String userName = request.getParameter("username");
         String userPwd = request.getParameter("password");
         User user = signInAndUp(userName,userPwd,type);
-
         if(user !=  null){
             request.getSession().setAttribute("userId",user.getUserId());
             request.getSession().setAttribute("userName",user.getUserName());

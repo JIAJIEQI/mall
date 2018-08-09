@@ -28,6 +28,7 @@
     <!-- 静态文件处理  -->
     <!-- location:表示/assets/目录下（即服务器根目录）的static包下的所有文件 -->
     <!-- mapping:表示以/static开头的所有请求路径，如/static/a 或者/static/a/b -->
+    <mvc:resources location="/assets/com/imgs/" mapping="/public/**" />
     <mvc:resources mapping="/doc/**" location="/doc/" />
     <mvc:resources mapping="/js/**" location="/js/" />
 
